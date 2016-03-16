@@ -4,19 +4,12 @@ on init
     # mount debugfs
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
-    setprop wifi.interface wlan0
-
-    # Set this property so AdvancedWifiSettings would show the checkbox
-    # for Enable/Disable Active Roaming
-    setprop ro.wifi.active_roaming.enable true
-
     # disable transparent huge pages
     write /sys/kernel/mm/transparent_hugepage/enabled "never"
 
     # See storage config details at http://source.android.com/tech/storage/
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
-
 
     # Disabled virtual memory randomization
     # (if randomization is enabled the AEM-JIT will have a lower cache hit rate)
