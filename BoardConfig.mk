@@ -56,3 +56,6 @@ ifeq ($(TARGET_SYSTEMIMAGES_USE_SQUASHFS), true)
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := squashfs
 endif
 endif
+
+# enable to use the CPUSETS feature
+ENABLE_CPUSETS := true
