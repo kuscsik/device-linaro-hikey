@@ -72,6 +72,9 @@ PRODUCT_PACKAGES += libGLES_android
 PRODUCT_PACKAGES += TIInit_11.8.32.bts \
                     wl18xx-fw-4.bin
 
+# Peripheral HALL
+PRODUCT_PACKAGES += peripheral_io.hikey
+
 # Copy hardware config file(s)
 PRODUCT_COPY_FILES +=  \
         device/linaro/hikey/etc/permissions/android.hardware.screen.xml:system/etc/permissions/android.hardware.screen.xml \
