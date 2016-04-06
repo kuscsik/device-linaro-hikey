@@ -1,0 +1,7 @@
+#!/bin/bash
+
+OS=${ANDROID_PROVISION_OS_PARTITIONS:-${ANDROID_PRODUCT_OUT}}
+
+fastboot flash boot ${OS}/boot_fat.uefi.img
+fastboot flash system ${OS}/system.img
+fastboot flash userdata ${OS}/userdata.img

@@ -92,5 +92,8 @@ PRODUCT_COPY_FILES += \
         device/linaro/hikey/android_dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
         device/linaro/hikey/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+PRODUCT_COPY_FILES += \
+    device/linaro/hikey/provision-device:provision-device
+
 # Copy media codecs config file
 PRODUCT_COPY_FILES += device/linaro/hikey/etc/media_codecs.xml:system/etc/media_codecs.xml
